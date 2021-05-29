@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/detail/detail",
+    "pages/shoppingMall/shoppingMall",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/ceshi/ceshi",
+    "pages/evaluate/evaluate"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

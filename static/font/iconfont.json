@@ -1,0 +1,30 @@
+{
+  "id": "2571759",
+  "name": "云享",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19473796",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9925340",
+      "name": "address",
+      "font_class": "address",
+      "unicode": "ea4f",
+      "unicode_decimal": 59983
+    },
+    {
+      "icon_id": "10318793",
+      "name": "search",
+      "font_class": "-search1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
