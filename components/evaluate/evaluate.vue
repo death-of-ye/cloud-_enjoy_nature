@@ -6,16 +6,16 @@
 			<view class="evaluate-first-line-left">
 				<text class="evaluate-first-line-left-title">商品评价(3)</text>
 			</view>
-			<!-- 第一行 右-->
-			<view class="evaluate-first-line-right">
-				<view class="evaluate-first-line-right-more" @click="more"><text class="">查看更多</text>
-					<image src="../../static/image/my/READMORE.png" mode=""></image>
+				<!-- 第一行 右-->
+				<view class="evaluate-first-line-right">
+					<view class="evaluate-first-line-right-more" @click="more"><text class="">查看更多</text>
+						<image src="../../static/image/my/READMORE.png" mode=""></image>
+					</view>
 				</view>
 			</view>
-		</view>
-		<!-- 第二行 -->
-		<view class="evaluate-second-line" v-for="(item,index) in evaluate" :key="index">
-			<!-- 第二行 第一行-->
+			<!-- 第二行 -->
+			<view class="evaluate-second-line" v-for="(item,index) in evaluate" :key="index">
+				<!-- 第二行 第一行-->
 			<view class="evaluate-second-line-first">
 				<!-- 第二行 第一行 左-->
 				<view class="evaluate-second-line-first-left">
