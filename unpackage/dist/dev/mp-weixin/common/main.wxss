@@ -289,4 +289,15 @@ rich-text ._table {
   height: 48rpx;
   margin-bottom: 5rpx;
 }
+.go-beyond-no-flex {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.go-beyond-flex {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 

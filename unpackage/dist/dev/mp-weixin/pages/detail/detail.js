@@ -134,6 +134,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+<<<<<<< HEAD
+=======
+  var g0 =
+    _vm.detailBox.num >= 10000 ? Math.floor(_vm.detailBox.num / 10000) : null
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        g0: g0
+      }
+    }
+  )
+>>>>>>> main
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -298,6 +311,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+<<<<<<< HEAD
+=======
+//
+//
+//
+>>>>>>> main
 var _default =
 {
   data: function data() {
@@ -307,6 +326,7 @@ var _default =
       current: 0,
       mode: 'none',
       swiperCurrent: 0,
+<<<<<<< HEAD
       detailBox: {
         swiperImg: [
         '../../static/image/index/banner6.png',
@@ -314,6 +334,15 @@ var _default =
 
         price: 98.8,
         num: 1000,
+=======
+      swiperImg: [
+      '../../static/image/index/banner6.png',
+      '../../static/image/index/banner6.png'],
+
+      detailBox: {
+        price: 98.8,
+        num: 100000,
+>>>>>>> main
         name: '青海特产风干牦牛肉干青海精品超干手撕 牦牛肉干500g正宗麻辣零食',
         keyword: [{
           text: '回味悠长' },

@@ -36,7 +36,12 @@
   font-size: 30rpx;
 }
 .evaluate .evaluateView {
-  margin: 0 30rpx;
+  width: 750rpx;
+  margin: -5rpx 60rpx 0 60rpx;
+  height: auto !important;
+  box-shadow: none;
+  background-color: #ffffff;
+  padding: 0;
 }
  .uni-navbar--border.data-v-6bda1a90 {
   border: none !important;

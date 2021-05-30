@@ -8,7 +8,7 @@
 		<!-- banner -->
 		<view class="banner">
 			<!-- 轮播 -->
-			<uni-swiper-dot :info="detailBox.swiperImg" :current="current" field="content" :mode="mode" class="swiper"
+			<uni-swiper-dot :info="swiperImg" :current="current" field="content" :mode="mode" class="swiper"
 				:dotsStyles="dotsStyles">
 				<swiper class="swiper-box" @change="changeSwiper">
 					<swiper-item v-for="(item ,index) in swiperImg" :key="index">
@@ -30,13 +30,16 @@
 							class="price-company">元</text></text>
 				</view>
 				<view class="detail-box-first-line-right">
-					<text>月销<text class="number">{{detailBox.num}}+</text></text>
+					<text>月销
+						<text
+							class="number">{{ detailBox.num>=10000? Math.floor( detailBox.num/10000)+'w' : detailBox.num}}+</text>
+					</text>
 				</view>
 			</view>
 			<!-- 第二行 -->
 			<view class="detail-box-second-line">
 				<view class="detail-box-second-line-left">
-					<text class="name">{{detailBox.name}}</text>
+					<text class="name go-beyond-no-flex">{{detailBox.name}}</text>
 				</view>
 				<view class="detail-box-second-line-right">
 					<image src="../../static/image/deatil/share.png" mode="heightFix"></image>
@@ -140,13 +143,13 @@
 				current: 0,
 				mode: 'none',
 				swiperCurrent: 0,
+				swiperImg: [
+					'../../static/image/index/banner6.png',
+					'../../static/image/index/banner6.png'
+				],
 				detailBox: {
-					swiperImg: [
-						'../../static/image/index/banner6.png',
-						'../../static/image/index/banner6.png'
-					],
 					price: 98.8,
-					num: 1000,
+					num: 100000,
 					name: '青海特产风干牦牛肉干青海精品超干手撕 牦牛肉干500g正宗麻辣零食',
 					keyword: [{
 							text: '回味悠长'
@@ -165,7 +168,7 @@
 				Specifications: {
 					Specification: '五香味500g【收藏加购送奶片】'
 				},
-				isEvaluate:true,
+				isEvaluate: true,
 				evaluate: [{
 						nick: '云享小王子',
 						headPortrait: '../../static/image/deatil/headPortrait.png',
@@ -178,7 +181,7 @@
 					}
 
 				],
-				detailImg:'../../static/image/deatil/detail_image.png'
+				detailImg: '../../static/image/deatil/detail_image.png'
 			};
 		},
 		methods: {
@@ -203,7 +206,6 @@
 <style lang="scss">
 	.detail {
 		padding: 0 30rpx;
-
 		.status-title {
 			font-size: 34rpx;
 			font-family: PingFang;
@@ -439,6 +441,9 @@
 						font-weight: 400;
 						color: #333333;
 						line-height: 38rpx;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
 					}
 				}
 

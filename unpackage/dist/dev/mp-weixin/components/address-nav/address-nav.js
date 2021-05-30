@@ -137,7 +137,15 @@ var _default =
     return {};
 
 
+<<<<<<< HEAD
   } };exports.default = _default;
+=======
+  },
+  methods: {
+    address_nav_to: function address_nav_to(item) {
+      console.log(item);
+    } } };exports.default = _default;
+>>>>>>> main
 
 /***/ }),
 

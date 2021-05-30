@@ -249,6 +249,9 @@
   font-weight: 400;
   color: #333333;
   line-height: 38rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .detail .Specifications .Specifications-first-line .Specifications-first-line-third-column {
   width: 20rpx;
