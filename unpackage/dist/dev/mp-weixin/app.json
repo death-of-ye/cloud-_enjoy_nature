@@ -5,7 +5,8 @@
     "pages/index/index",
     "pages/my/my",
     "pages/ceshi/ceshi",
-    "pages/evaluate/evaluate"
+    "pages/evaluate/evaluate",
+    "pages/shopType/shopType"
   ],
   "subPackages": [],
   "window": {
