@@ -54,7 +54,12 @@
 			}
 		}
 		.evaluateView{
-			margin: 0 30rpx;
+			width: 750rpx;
+			margin: -5rpx 60rpx 0 60rpx;
+			height: auto !important;
+			box-shadow: none;
+			background-color: #ffffff;
+			padding: 0;
 		}
 	}
 

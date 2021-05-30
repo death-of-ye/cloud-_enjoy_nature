@@ -21,6 +21,11 @@
 			return {
 
 			};
+		},
+		methods:{
+			address_nav_to(item){
+				console.log(item)
+			}
 		}
 	}
 </script>
