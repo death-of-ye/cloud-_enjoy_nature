@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/shopType/shopType",
     "pages/index/index",
     "pages/detail/detail",
     "pages/shoppingMall/shoppingMall",
     "pages/my/my",
     "pages/ceshi/ceshi",
-    "pages/evaluate/evaluate",
-    "pages/shopType/shopType"
+    "pages/evaluate/evaluate"
   ],
   "subPackages": [],
   "window": {

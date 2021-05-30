@@ -1,6 +1,17 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		    "path" : "pages/shopType/shopType",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+				
+		    }
+		    
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "云享自然",
@@ -53,15 +64,6 @@
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false,
 				"navigationStyle": "custom"
-            }
-            
-        }
-        ,{
-            "path" : "pages/shopType/shopType",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
             }
             
         }

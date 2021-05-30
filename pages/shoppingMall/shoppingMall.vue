@@ -74,7 +74,7 @@
 					{
 						img: '../../static/image/shoppingMall/jerky.png',
 						text: '肉干',
-						url: 'url2'
+						url: '/pages/shopType/shopType'
 					},
 					{
 						img: '../../static/image/shoppingMall/medicinalMaterials.png',

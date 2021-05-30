@@ -96,13 +96,13 @@ var components
 try {
   components = {
     uniNavBar: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar */ "uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue */ 60))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar */ "uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue */ 66))
     },
     uniIcons: function() {
-      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 67))
+      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 87))
     },
     evaluate: function() {
-      return __webpack_require__.e(/*! import() | components/evaluate/evaluate */ "components/evaluate/evaluate").then(__webpack_require__.bind(null, /*! @/components/evaluate/evaluate.vue */ 117))
+      return __webpack_require__.e(/*! import() | components/evaluate/evaluate */ "components/evaluate/evaluate").then(__webpack_require__.bind(null, /*! @/components/evaluate/evaluate.vue */ 123))
     }
   }
 } catch (e) {
@@ -159,7 +159,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var evaluate = function evaluate() {__webpack_require__.e(/*! require.ensure | components/evaluate/evaluate */ "components/evaluate/evaluate").then((function () {return resolve(__webpack_require__(/*! ../../components/evaluate/evaluate.vue */ 117));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var evaluate = function evaluate() {__webpack_require__.e(/*! require.ensure | components/evaluate/evaluate */ "components/evaluate/evaluate").then((function () {return resolve(__webpack_require__(/*! ../../components/evaluate/evaluate.vue */ 123));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
