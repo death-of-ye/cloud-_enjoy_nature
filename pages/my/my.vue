@@ -163,7 +163,7 @@
 					{
 						img: '../../static/image/my/zhiwu@2x.png',
 						text: '商城',
-						url: '/pages/index/index'
+						url: '/pages/shoppingMall/shoppingMall'
 					},
 					{
 						img: '../../static/image/my/shucai-@2x.png',

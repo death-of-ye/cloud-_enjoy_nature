@@ -304,4 +304,13 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+	//处理兼容
+	.compatibleProcessing{
+		box-sizing: content-box;
+		padding-bottom: constant(safe-area-inset-bottom);
+		/* 兼容 iOS < 11.2 */
+		padding-bottom: env(safe-area-inset-bottom);
+		/* 兼容 iOS >= 11.2 */
+	}
+	
 </style>

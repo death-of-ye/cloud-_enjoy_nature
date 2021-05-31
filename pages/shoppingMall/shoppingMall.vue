@@ -74,7 +74,7 @@
 					{
 						img: '../../static/image/shoppingMall/jerky.png',
 						text: '肉干',
-						url: 'url2'
+						url: '/pages/shopType/shopType'
 					},
 					{
 						img: '../../static/image/shoppingMall/medicinalMaterials.png',
@@ -96,7 +96,7 @@
 							img: '../../static/image/index/bagroundImage.png',
 							title: '青海特产黑果枸杞',
 							price: 300,
-							num: 305,
+							num: 100000,
 							recommendColor: '#FA3117',
 
 						},
@@ -182,8 +182,8 @@
 		.search {
 			width: 690rpx;
 			height: 58rpx;
-			// background-color: #0077AA;	
-			padding: 20rpx 0 22rpx 0;
+			box-sizing: border-box;
+			margin: 20rpx 0 28rpx 0;
 
 			.search-view {
 				width: 100%;
@@ -242,8 +242,8 @@
 		}
 
 		/deep/.recommend {
-			margin-top: 128rpx;
-
+			margin-top: 107rpx;
+			margin-bottom: 62rpx;
 			.title {
 				margin-bottom: 47rpx;
 			}

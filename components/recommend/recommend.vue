@@ -25,7 +25,7 @@
 								:style="{color:item.recommendColor}">￥</text><text style="margin-right: 5rpx;"
 								:style="{color:item.recommendColor}">{{ item.price }}</text>元
 						</view>
-						<view class=""><text>已售</text>{{item.num}}</view>
+						<view class=""><text>已售</text>{{item.num>10000?parseInt(item.num/10000)+'w+':item.num}}</view>
 					</view>
 				</view>
 			</view>
@@ -43,6 +43,14 @@
 			return {
 
 			};
+		},
+		methods: {
+			recommend_detail_to(item) {
+				console.log(item)
+				uni.navigateTo({
+					url: '../../pages/detail/detail'
+				})
+			}
 		}
 	}
 </script>

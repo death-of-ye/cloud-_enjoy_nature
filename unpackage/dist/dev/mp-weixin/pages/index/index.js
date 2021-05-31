@@ -96,7 +96,7 @@ var components
 try {
   components = {
     uniNavBar: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar */ "uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue */ 60))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar */ "uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue */ 68))
     },
     uniSwiperDot: function() {
       return __webpack_require__.e(/*! import() | uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot */ "uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue */ 75))
@@ -156,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var sunuiStar = function sunuiStar() {__webpack_require__.e(/*! require.ensure | components/sunni-star/sunni-star */ "components/sunni-star/sunni-star").then((function () {return resolve(__webpack_require__(/*! ../../components/sunni-star/sunni-star.vue */ 96));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var sunuiStar = function sunuiStar() {__webpack_require__.e(/*! require.ensure | components/sunni-star/sunni-star */ "components/sunni-star/sunni-star").then((function () {return resolve(__webpack_require__(/*! ../../components/sunni-star/sunni-star.vue */ 104));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

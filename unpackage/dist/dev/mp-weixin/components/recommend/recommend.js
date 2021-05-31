@@ -81,6 +81,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var l0 = _vm.__map(_vm.recommend.recommends, function(item, index) {
+    var $orig = _vm.__get_orig(item)
+
+    var m0 = item.num > 10000 ? parseInt(item.num / 10000) : null
+    return {
+      $orig: $orig,
+      m0: m0
+    }
+  })
+
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        l0: l0
+      }
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -114,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -159,7 +177,15 @@ var _default =
     return {};
 
 
-  } };exports.default = _default;
+  },
+  methods: {
+    recommend_detail_to: function recommend_detail_to(item) {
+      console.log(item);
+      uni.navigateTo({
+        url: '../../pages/detail/detail' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

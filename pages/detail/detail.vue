@@ -8,8 +8,7 @@
 		<!-- banner -->
 		<view class="banner">
 			<!-- 轮播 -->
-			<uni-swiper-dot :info="swiperImg" :current="current" field="content" :mode="mode" class="swiper"
-				:dotsStyles="dotsStyles">
+			<uni-swiper-dot :info="swiperImg" :current="current" field="content" :mode="mode" class="swiper">
 				<swiper class="swiper-box" @change="changeSwiper">
 					<swiper-item v-for="(item ,index) in swiperImg" :key="index">
 						<view class="swiper-item">
@@ -32,7 +31,7 @@
 				<view class="detail-box-first-line-right">
 					<text>月销
 						<text
-							class="number">{{ detailBox.num>=10000? Math.floor( detailBox.num/10000)+'w' : detailBox.num}}+</text>
+							class="number">{{ detailBox.num>=10000?parseInt(detailBox.num/10000)+'w' : detailBox.num}}+</text>
 					</text>
 				</view>
 			</view>
@@ -47,7 +46,7 @@
 			</view>
 			<!-- 第三行 -->
 			<view class="detail-box-third-line">
-				<text class="pin" v-for="item in detailBox.keyword">{{ item.text }}</text>
+				<text class="pin oh1" v-for="item in detailBox.keyword">{{ item.text }}</text>
 			</view>
 		</view>
 		<!-- 规格 -->
@@ -130,6 +129,24 @@
 			</view>
 		</view>
 
+		<view class="ShoppingCart compatibleProcessing">
+			<view class="ShoppingCart-item-left">
+				<view class="ShoppingCart-item-left-column"
+				:style="{width:1/ShoppingCartData.left.length*100+'%'}"
+				v-for="(item,index) in ShoppingCartData.left" 
+				:key="index">
+					<image :src="item.img" mode=""></image>
+					<view class=""><text>{{ item.text }}</text></view>
+				</view>
+			</view>
+			<view class="ShoppingCart-item-right">
+				<view class="addToCart" v-for="(item,index) in ShoppingCartData.right"
+					:style="{backgroundColor:item.color}">
+					{{ item.text }}
+				</view>
+			</view>
+		</view>
+
 
 	</view>
 </template>
@@ -149,7 +166,7 @@
 				],
 				detailBox: {
 					price: 98.8,
-					num: 100000,
+					num: 1000,
 					name: '青海特产风干牦牛肉干青海精品超干手撕 牦牛肉干500g正宗麻辣零食',
 					keyword: [{
 							text: '回味悠长'
@@ -177,11 +194,35 @@
 					{
 						nick: '云享小王子',
 						headPortrait: '../../static/image/deatil/headPortrait.png',
-						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃'
+						evaluate: '口感我感觉一般吧，稍微偏硬一点，牙口不好的人慎重，味道 还是不错的'
 					}
 
 				],
-				detailImg: '../../static/image/deatil/detail_image.png'
+				detailImg: '../../static/image/deatil/detail_image.png',
+				ShoppingCartData: {
+					left: [{
+							img: '../../static/image/my/ke.png',
+							text: '客服'
+						},
+						{
+							img: '../../static/image/deatil/report.png',
+							text: '举报'
+						},
+						{
+							img: '../../static/image/deatil/Collection.png',
+							text: '收藏'
+						}
+					],
+					right: [{
+							color: '#FA3117',
+							text: '加入购物车'
+						},
+						{
+							color: '#FECE0A',
+							text: '立即购买'
+						}
+					]
+				}
 			};
 		},
 		methods: {
@@ -206,6 +247,7 @@
 <style lang="scss">
 	.detail {
 		padding: 0 30rpx;
+
 		.status-title {
 			font-size: 34rpx;
 			font-family: PingFang;
@@ -320,7 +362,7 @@
 					width: 127rpx;
 					height: 100%;
 					display: flex;
-
+					justify-content: flex-end;
 					// justify-content: center;
 					// align-items: center;
 					text:nth-child(1) {
@@ -336,7 +378,7 @@
 			}
 
 			.detail-box-second-line {
-				width: 690rpx;
+				width: 100%;
 				height: 74rpx;
 				// background-color: #795DA3;
 				margin-top: 27rpx;
@@ -361,7 +403,7 @@
 					width: 44rpx;
 					height: 100%;
 					position: absolute;
-					right: 19rpx;
+					right: 0;
 					top: 0;
 
 					// background-color: #A71D5D;
@@ -384,10 +426,9 @@
 					font-family: PingFang;
 					font-weight: 400;
 					color: #666666;
-					display: flex;
-					align-items: center;
 					line-height: 38rpx;
 					margin-right: 10rpx;
+					max-width: 100rpx;
 				}
 			}
 		}
@@ -512,7 +553,7 @@
 		/* 评价 */
 		.evaluate {
 			width: 690rpx;
-			height: 467rpx;
+			// height: 467rpx;
 			box-sizing: border-box;
 			padding: 35rpx 19rpx 34rpx 20rpx;
 			background: #FDFDFD;
@@ -649,13 +690,9 @@
 		/* 宝贝详情 */
 		.BabyDetails {
 			width: 690rpx;
-			height: 680rpx;
 			// background-color: #F0AD4E;
 			margin-top: 64rpx;
-			margin-bottom: 30rpx;
 			box-sizing: border-box;
-			padding-bottom: constant(safe-area-inset-bottom); //兼容 IOS<11.2
-			padding-bottom: env(safe-area-inset-bottom); //兼容 IOS>11.2
 
 			.BabyDetails-title {
 				box-sizing: border-box;
@@ -692,6 +729,7 @@
 			}
 
 			.BabyDetails-body {
+				width: 100%;
 				margin-top: 35rpx;
 
 				image {
@@ -709,6 +747,62 @@
 			box-sizing: content-box;
 			padding-bottom: constant(safe-area-inset-bottom); //兼容 IOS<11.2
 			padding-bottom: env(safe-area-inset-bottom); //兼容 IOS>11.2
+		}
+
+		.ShoppingCart {
+			width: 690rpx;
+			height: 120rpx;
+			display: flex;
+			align-items: center;
+
+			// position: relative;
+			.ShoppingCart-item-left {
+				width: 230rpx;
+				height: 100%;
+				background-color: #FFFFFF;
+				display: flex;
+				align-items: center;
+
+				.ShoppingCart-item-left-column {
+					font-size: 22rpx;
+					display: flex;
+					flex-direction: column;
+					// width: 33.3%;
+					justify-content: center;
+
+					// margin-right: 34rpx;
+					image {
+						width: 40rpx;
+						height: 40rpx;
+					}
+				}
+			}
+
+			.ShoppingCart-item-right {
+				width: 492rpx;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				view {
+					border-radius: 40rpx;
+				}
+
+				.addToCart {
+					width: 220rpx;
+					height: 80rpx;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 30rpx;
+					font-family: PingFang;
+					font-weight: bold;
+					color: #FFFFFF;
+					line-height: 38rpx;
+					background-color: #FA3117;
+				}
+			}
 		}
 
 		//修改第三方组件样式

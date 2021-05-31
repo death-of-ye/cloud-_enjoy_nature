@@ -24,7 +24,10 @@
 		},
 		methods:{
 			address_nav_to(item){
-				console.log(item)
+				uni.navigateTo({
+					// url:item.url+'?text='+ JSON.stringify(item)
+					url:item.url+'?text='+ item.text
+				})
 			}
 		}
 	}

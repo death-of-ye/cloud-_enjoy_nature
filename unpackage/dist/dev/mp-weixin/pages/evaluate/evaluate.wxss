@@ -43,6 +43,9 @@
   background-color: #ffffff;
   padding: 0;
 }
+.evaluate .evaluateView .evaluate-second-line-second {
+  padding-right: 110rpx;
+}
  .uni-navbar--border.data-v-6bda1a90 {
   border: none !important;
 }

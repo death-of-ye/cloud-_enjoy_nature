@@ -30,7 +30,7 @@
 					<!-- 时间 -->
 					<view class="evaluate-second-line-first-right-time">
 						<text>5天前&nbsp;</text>
-						<text v-if="!isEvaluate">|nbsp;</text>
+						<text v-if="!isEvaluate">|&nbsp;麻辣味</text>
 					</view>
 				</view>
 			</view>

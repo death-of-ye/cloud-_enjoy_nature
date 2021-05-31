@@ -60,6 +60,9 @@
 			box-shadow: none;
 			background-color: #ffffff;
 			padding: 0;
+			.evaluate-second-line-second{
+				padding-right: 110rpx;
+			}
 		}
 	}
 

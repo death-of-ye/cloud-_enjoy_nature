@@ -37,7 +37,8 @@
 .ShoppingMall .search {
   width: 690rpx;
   height: 58rpx;
-  padding: 20rpx 0 22rpx 0;
+  box-sizing: border-box;
+  margin: 20rpx 0 28rpx 0;
 }
 .ShoppingMall .search .search-view {
   width: 100%;
@@ -87,7 +88,8 @@
   border-radius: 6rpx;
 }
 .ShoppingMall .recommend {
-  margin-top: 128rpx;
+  margin-top: 107rpx;
+  margin-bottom: 62rpx;
 }
 .ShoppingMall .recommend .title {
   margin-bottom: 47rpx;
