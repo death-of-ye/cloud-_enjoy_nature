@@ -6,14 +6,14 @@
 		</uni-nav-bar>
 		<view class="shopType-nav">
 			<view class="shopType-nav-item" v-for="(item,index) in shopTypeNav" :key="index"
-				:class="active==index?'active':''" :style="{color:active==index?'#FECE0A':'#333333'}"
+				:style="{color:active==index?'#FECE0A':'#333333'}"
 				@click="shopTypeNavClick(index)">
 				<view class="left">
 					<text>{{ item.text }}</text>
 				</view>
 				<view class="right">
-					<text :class="item.sortIcon?'iconfont icon-paixushang':''"></text>
-					<text :class="item.sortIcon?'iconfont icon-paixuxia':''"></text>
+					<text :class="item.sortIcon?'iconfont icon-paixushang':''" @click="sortShang(index)"></text>
+					<text :class="item.sortIcon?'iconfont icon-paixuxia':''" @click="sortXia(index)"></text>
 				</view>
 			</view>
 		</view>
@@ -107,6 +107,14 @@
 			shopTypeNavClick(index) {
 				this.active = index;
 				console.log(this.active)
+			},
+			sortShang(index){
+				console.log("上排序");
+				this.active = index;
+			},
+			sortXia(index){
+				console.log('下排序');
+				this.active = index;
 			}
 		}
 	}
@@ -285,7 +293,7 @@
 
 	.icon-paixushang,
 	.icon-paixuxia {
-		font-size: 17rpx;
+		font-size: 12rpx;
 		color: #999999;
 	}
 

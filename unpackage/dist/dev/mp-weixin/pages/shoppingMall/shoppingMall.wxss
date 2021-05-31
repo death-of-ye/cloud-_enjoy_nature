@@ -104,6 +104,12 @@
   color: #FA3117;
   opacity: 0.8;
 }
+.ShoppingMall .tab .tab-item {
+  opacity: 0.8;
+}
+.ShoppingMall .tab .tab-item:nth-child(3) {
+  opacity: 1;
+}
 /* 修改第三方组件 */
  .uni-navbar--border.data-v-6bda1a90 {
   border: none !important;

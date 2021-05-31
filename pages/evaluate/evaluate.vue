@@ -11,7 +11,7 @@
 <script>
 	import evaluate from '../../components/evaluate/evaluate.vue'
 	export default {
-		components:{
+		components: {
 			evaluate
 		},
 		data() {
@@ -25,8 +25,45 @@
 					{
 						nick: '云享小王子',
 						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '口感我感觉一般吧，稍微偏硬一点，牙口不好的人慎重，味道 还是不错的'
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '口感我感觉一般吧，稍微偏硬一点，牙口不好的人慎重，味道 还是不错的',
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃'
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃',
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃'
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃'
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
+						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃'
+					},
+					{
+						nick: '云享小王子',
+						headPortrait: '../../static/image/deatil/headPortrait.png',
 						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃'
 					}
+
+
 
 				],
 			};
@@ -53,14 +90,16 @@
 				font-size: 30rpx;
 			}
 		}
-		.evaluateView{
+
+		.evaluateView {
 			width: 750rpx;
 			margin: -5rpx 60rpx 0 60rpx;
 			height: auto !important;
 			box-shadow: none;
 			background-color: #ffffff;
 			padding: 0;
-			.evaluate-second-line-second{
+
+			.evaluate-second-line-second {
 				padding-right: 110rpx;
 			}
 		}

@@ -26,7 +26,7 @@
 		<address-nav :addressNav="type_nav"></address-nav>
 		<!-- recommend -->
 		<recommend :recommend="recommend" class="shop_recommend"></recommend>
-		<view class="" style="width: 690rpx;height: 50rpx;"></view>
+		<view class="" style="width: 690rpx;height: 50rpx;margin-bottom:20rpx;"></view>
 		<view class="tab">
 			<view class="tab-item" v-for="(item,index) in tab" :key="index" @click="navTo(item.url)">
 				<image :src="item.img" mode="heightFix" lazy-load></image>
@@ -138,7 +138,7 @@
 					{
 						img: '../../static/image/shoppingMall/dalou.png',
 						text: '商城',
-						url: '/pages/shoppingMall/shoppingMall'
+						url: ''
 					},
 					{
 						img: '../../static/image/shoppingMall/lanzi.png',
@@ -258,6 +258,12 @@
 				font-weight: 500;
 				color: #FA3117;
 				opacity: 0.8;
+			}
+			.tab-item{
+				opacity: 0.8;
+			}
+			.tab-item:nth-child(3){
+				opacity: 1;
 			}
 		}
 	}

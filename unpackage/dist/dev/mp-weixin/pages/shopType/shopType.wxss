@@ -218,7 +218,7 @@
 }
 .icon-paixushang.data-v-50859086,
 .icon-paixuxia.data-v-50859086 {
-  font-size: 17rpx;
+  font-size: 12rpx;
   color: #999999;
 }
 .data-v-50859086 .uni-navbar--border.data-v-6bda1a90 {

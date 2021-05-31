@@ -978,7 +978,14 @@
 				}
 			}
 		}
-
+	.tab{
+		.tab-item{
+			opacity: 0.7;
+		}
+		.tab-item:nth-child(1){
+			opacity: 1;
+		}
+	}
 
 
 

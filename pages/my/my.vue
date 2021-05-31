@@ -557,6 +557,13 @@
 
 		.tab {
 			margin-left: 0;
+			background-color: #EB4C50;
+			.tab-item{
+				opacity: 0.7;
+			}
+			.tab-item:nth-child(5){
+				opacity: 1;
+			}
 		}
 
 		// .tab {

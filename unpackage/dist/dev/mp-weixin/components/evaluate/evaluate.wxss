@@ -162,6 +162,7 @@
   font-weight: 400;
   color: #999999;
   line-height: 38rpx;
+  margin-right: 0.25em;
 }
 .evaluateView .evaluate-second-line .evaluate-second-line-second text {
   font-size: 24rpx;

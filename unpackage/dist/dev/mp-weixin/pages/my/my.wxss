@@ -315,5 +315,12 @@ page {
 }
 .my .tab {
   margin-left: 0;
+  background-color: #EB4C50;
+}
+.my .tab .tab-item {
+  opacity: 0.7;
+}
+.my .tab .tab-item:nth-child(5) {
+  opacity: 1;
 }
 

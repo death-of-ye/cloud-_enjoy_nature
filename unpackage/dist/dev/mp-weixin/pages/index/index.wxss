@@ -585,6 +585,12 @@
 .index .recommend .body .s-r .s-r-item .price view:nth-child(2) text.data-v-57280228 {
   margin: 0 10rpx 0 0;
 }
+.index .tab .tab-item.data-v-57280228 {
+  opacity: 0.7;
+}
+.index .tab .tab-item.data-v-57280228:nth-child(1) {
+  opacity: 1;
+}
 text.data-v-57280228 {
   margin: 0;
 }

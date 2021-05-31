@@ -79,7 +79,7 @@
 			<view class="evaluate-first-line" v-if="isEvaluate">
 				<!-- 第一行 左-->
 				<view class="evaluate-first-line-left">
-					<text class="evaluate-first-line-left-title">商品评价(3)</text>
+					<text class="evaluate-first-line-left-title">商品评价({{ evaluate.length }})</text>
 				</view>
 				<!-- 第一行 右-->
 				<view class="evaluate-first-line-right">
@@ -128,7 +128,7 @@
 				<image :src="detailImg" mode="widthFix"></image>
 			</view>
 		</view>
-
+		<view class="" style="width: 690rpx;height: 50rpx;margin-bottom:120rpx;"></view>
 		<view class="ShoppingCart compatibleProcessing">
 			<view class="ShoppingCart-item-left">
 				<view class="ShoppingCart-item-left-column"
@@ -190,11 +190,13 @@
 						nick: '云享小王子',
 						headPortrait: '../../static/image/deatil/headPortrait.png',
 						evaluate: '麻辣味道挺好的，已经推荐给朋友，很好吃',
+						Specification:'五香味500g'
 					},
 					{
 						nick: '云享小王子',
 						headPortrait: '../../static/image/deatil/headPortrait.png',
-						evaluate: '口感我感觉一般吧，稍微偏硬一点，牙口不好的人慎重，味道 还是不错的'
+						evaluate: '口感我感觉一般吧，稍微偏硬一点，牙口不好的人慎重，味道 还是不错的',
+						Specification:'五香味500g'
 					}
 
 				],
@@ -738,22 +740,14 @@
 			}
 		}
 
-		//goods
-		.goods {
-			width: 690rpx;
-			position: fixed;
-			bottom: 0;
-			// background-color: #FFECEC;
-			box-sizing: content-box;
-			padding-bottom: constant(safe-area-inset-bottom); //兼容 IOS<11.2
-			padding-bottom: env(safe-area-inset-bottom); //兼容 IOS>11.2
-		}
 
 		.ShoppingCart {
 			width: 690rpx;
 			height: 120rpx;
 			display: flex;
 			align-items: center;
+			position: fixed;
+			bottom: 0;
 
 			// position: relative;
 			.ShoppingCart-item-left {
@@ -784,6 +778,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				background-color: #fff;
 
 				view {
 					border-radius: 40rpx;
@@ -804,7 +799,9 @@
 				}
 			}
 		}
-
+		.compatibleProcessing{
+			background-color: #fff;
+		}
 		//修改第三方组件样式
 		/deep/ .uni-navbar--border.data-v-6bda1a90 {
 			border: none !important;

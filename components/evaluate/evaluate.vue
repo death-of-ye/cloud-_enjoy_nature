@@ -29,8 +29,9 @@
 					</view>
 					<!-- 时间 -->
 					<view class="evaluate-second-line-first-right-time">
-						<text>5天前&nbsp;</text>
-						<text v-if="!isEvaluate">|&nbsp;麻辣味</text>
+						<text>5天前</text>
+						<text v-if="!isEvaluate">|</text>
+						<text v-if="!isEvaluate">麻辣味</text>
 					</view>
 				</view>
 			</view>
@@ -176,6 +177,7 @@
 							font-weight: 400;
 							color: #999999;
 							line-height: 38rpx;
+							margin-right:0.25em;
 						}
 					}
 				}
